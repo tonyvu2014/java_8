@@ -25,11 +25,11 @@ public class StreamExperiment {
 		System.out.println(averageAge.isPresent()?averageAge.getAsDouble(): "Non-deterministic");	
 
 		System.out.println("Sum of numbers from 1 to 1000:");		
-		int total = IntStream.rangeClosed(1,1000).reduce(0, (x,y)->x+y);
+	    int total = IntStream.rangeClosed(1,1000).reduce(0, (x,y)->x+y);
 		System.out.println(total);
 
 		System.out.println("Sum of numbers from 1 to 1000:");				
-        int sum = IntStream.rangeClosed(1,1000).sum();
+		int sum = IntStream.rangeClosed(1,1000).sum();
 		System.out.println(sum);
 		
 		System.out.println("Finding perfect numbers from 1 to 100000 with stream:");
