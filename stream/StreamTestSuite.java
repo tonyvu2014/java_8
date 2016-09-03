@@ -5,10 +5,10 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-   IntStreamTest.class,
-   MemberStreamTest.class
+    IntStreamTest.class,
+    MemberStreamTest.class
 })
 public class StreamTestSuite {
-	
+    
 }
 
