@@ -8,7 +8,6 @@ import org.junit.runners.Suite;
     IntStreamTest.class,
     MemberStreamTest.class
 })
-public class StreamTestSuite {
-    
+public class StreamTestSuite {   
 }
 
