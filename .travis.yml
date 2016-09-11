@@ -1,3 +1,2 @@
 language: java
-script: javac stream/TestRunner.java
-java stream/TestRunner
+script: java stream/TestRunner
