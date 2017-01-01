@@ -30,14 +30,14 @@ public class DateTimeExperiment {
 		LocalDateTime parsedDateTime = LocalDateTime.parse("2016-12-31T10:09:20");
 		System.out.println("Parsed Date Time: " + parsedDateTime);
 		
-		LocalDate nextBirthday = LocalDate.of(2017, Month.APRIL, 14);
+		LocalDate nextBirthday = LocalDate.of(currentDate.getYear()+1, Month.APRIL, 14);
 	    System.out.println("Next birthday: " + nextBirthday);
 		
 		Duration duration = Duration.between(parsedDateTime, currentDateTime);
 		System.out.println("Duration: " + duration);
 		
 		Period tillNextBirthday = Period.between(currentDate, nextBirthday);
-		System.out.println("Time till next birthday: " + tillNextBirthday.getYears() + " years, " + tillNextBirthday.getMonths() + " months, " + tillNextBirthday.getDays() + " days");
+		System.out.println("Time till next year's birthday: " + tillNextBirthday.getYears() + " years, " + tillNextBirthday.getMonths() + " months, " + tillNextBirthday.getDays() + " days");
 		
 		ZoneId currentZone = ZoneId.systemDefault();
 		System.out.println("Current Zone: " + currentZone);
