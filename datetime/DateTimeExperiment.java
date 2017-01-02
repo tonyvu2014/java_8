@@ -24,14 +24,14 @@ public class DateTimeExperiment {
 		System.out.println("Formatted Current Date Time: " + currentDateTime.format(dateTimeFormatter));
 		System.out.println("Current Year: " + currentDateTime.getYear() + ", Day Of Year: " + currentDateTime.getDayOfYear() + ", Second: " + currentDateTime.getSecond());
 		
-	    LocalTime noonTime = LocalTime.of(12, 0);
+		LocalTime noonTime = LocalTime.of(12, 0);
 		System.out.println("Noon time: " + noonTime);
 		
 		LocalDateTime parsedDateTime = LocalDateTime.parse("2016-12-31T10:09:20");
 		System.out.println("Parsed Date Time: " + parsedDateTime);
 		
 		LocalDate nextBirthday = LocalDate.of(currentDate.getYear()+1, Month.APRIL, 14);
-	    System.out.println("Next birthday: " + nextBirthday);
+		System.out.println("Next birthday: " + nextBirthday);
 		
 		Duration duration = Duration.between(parsedDateTime, currentDateTime);
 		System.out.println("Duration: " + duration);
