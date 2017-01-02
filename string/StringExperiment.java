@@ -16,7 +16,7 @@ public class StringExperiment {
 		String names = String.join("-", "Allan", "Bella", "Craig", "Dennis");
 		System.out.println(names);
 		
-        List<String> nameList =  Arrays.asList("Allan", "Bella", "Craig", "Dennis");
+		List<String> nameList =  Arrays.asList("Allan", "Bella", "Craig", "Dennis");
 		String listOfName = String.join("-", nameList);
 		System.out.println(names.equals(listOfName));
 	}
